@@ -1,6 +1,6 @@
 * **入科必读**
   * [致新轮转医生的一封信](README.md)
-  * [每日查房与交班时间轴](daily-routine.md)
+  * [每日查房与交班时间轴](daily.md)
 * **文书与医嘱规范**
   * [病历书写核心要点](medical-record.md)
   * [常见术前/术后医嘱模板](orders.md)
