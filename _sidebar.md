@@ -7,3 +7,5 @@
 * **临床沟通与应急**
   * [术前谈话培训](consent.md)
   * [夜班常见急症处理流程](night-shift.md)
+* **常用表单**
+  * [腹股沟疝术后宣教单](TAPP-education.pdf ':ignore')
