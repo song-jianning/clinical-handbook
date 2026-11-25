@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>轮转医生三级查房制度速览 — 北京友谊医院</title>
+<style>
+  :root{
+    --primary:#1a7f5a; --primary-dark:#0f5c41; --accent:#2b8a3e;
+    --bg:#f5f7f6; --card:#ffffff; --text:#2b2f2e; --muted:#6b7673;
+    --line:#dde5e1; --warn:#c0392b; --warn-bg:#fdecea;
+    --tip:#0b6fa4; --tip-bg:#e8f4fb; --gold:#b8860b;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif;
+       background:var(--bg); color:var(--text); line-height:1.75; font-size:15px;}
+  .wrap{max-width:980px; margin:0 auto; padding:24px 18px 60px;}
+
+  header{background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+         color:#fff; padding:34px 26px; border-radius:14px; margin-bottom:22px;}
+  header h1{font-size:26px; letter-spacing:1px;}
+  header p{margin-top:8px; opacity:.92; font-size:14px;}
+  .badge{display:inline-block; background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.4);
+         border-radius:20px; padding:2px 14px; font-size:12.5px; margin-top:12px; margin-right:8px;}
+
+  h2{font-size:20px; color:var(--primary-dark); border-left:5px solid var(--primary);
+     padding-left:12px; margin:34px 0 14px;}
+  h3{font-size:16.5px; color:var(--primary); margin:20px 0 10px;}
+  p{margin:8px 0;}
+  ul,ol{margin:8px 0 8px 22px;}
+  li{margin:5px 0;}
+  b.hl{color:var(--primary-dark);}
+  .small{font-size:13px; color:var(--muted);}
+
+  .card{background:var(--card); border:1px solid var(--line); border-radius:12px;
+        padding:18px 20px; margin:14px 0; box-shadow:0 1px 4px rgba(0,0,0,.04);}
+  .warn{background:var(--warn-bg); border-left:4px solid var(--warn); border-radius:8px; padding:12px 16px; margin:14px 0;}
+  .tip{background:var(--tip-bg); border-left:4px solid var(--tip); border-radius:8px; padding:12px 16px; margin:14px 0;}
+  .warn b{color:var(--warn);} .tip b{color:var(--tip);}
+
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:#fff;}
+  th,td{border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top;}
+  th{background:var(--primary); color:#fff; font-weight:600; white-space:nowrap;}
+  tr:nth-child(even) td{background:#f3f8f5;}
+  td.center, th.center{text-align:center;}
+
+  .freq{font-size:22px; font-weight:700; color:var(--primary-dark);}
+
+  /* 流程图 */
+  .flow{display:flex; align-items:stretch; gap:0; margin:20px 0; flex-wrap:wrap;}
+  .step{flex:1; min-width:150px; background:#fff; border:2px solid var(--primary);
+        border-radius:10px; padding:12px 14px; position:relative;}
+  .step h4{font-size:14.5px; color:var(--primary-dark); margin-bottom:6px;}
+  .step p{font-size:13px; color:var(--muted); line-height:1.6; margin:2px 0;}
+  .arrow{align-self:center; color:var(--primary); font-size:22px; padding:0 8px; font-weight:700;}
+
+  .check li{list-style:none; position:relative; padding-left:28px;}
+  .check li::before{content:"☐"; position:absolute; left:0; top:0; color:var(--primary);
+                    font-size:17px; font-weight:700;}
+
+  .kv{display:grid; grid-template-columns:120px 1fr; gap:6px 14px; font-size:14px;}
+  .kv dt{color:var(--muted);} .kv dd{margin:0;}
+
+  footer{margin-top:40px; padding-top:16px; border-top:1px solid var(--line);
+         font-size:12.5px; color:var(--muted); text-align:center;}
+  @media print{ body{background:#fff;} .card{box-shadow:none;} header{-webkit-print-color-adjust:exact; print-color-adjust:exact;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>轮转医生三级查房制度速览</h1>
+  <p>依据《首都医科大学附属北京友谊医院核心制度汇编（2026年6月）》三级查房制度整理 · 适用于轮转医师、进修医师、实习医师</p>
+  <span class="badge">核心制度</span>
+  <span class="badge">一线查房执行主体</span>
+  <span class="badge">患者评估 · 诊疗方案 · 疗效观察</span>
+</header>
+
+<div class="card">
+  <h3 style="margin-top:0">什么是三级查房？</h3>
+  <p>指患者住院期间，由<b class="hl">不同级别的医师以查房的形式</b>实施患者评估、制定与调整诊疗方案、观察诊疗效果等医疗活动的制度。三级分别为：</p>
+  <table>
+    <tr><th style="width:110px">级别</th><th style="width:220px">担任人员</th><th>核心职责</th></tr>
+    <tr><td class="center"><b>三线查房</b></td><td>科主任、主任医师/副主任医师</td><td>解决疑难、危重病例诊疗方案；决定重大手术及特殊检查治疗；督促科室医疗质量</td></tr>
+    <tr><td class="center"><b>二线查房</b></td><td>主治医师及以上职称</td><td>审核诊断、鉴别诊断与治疗计划；决定提请三线查房、疑难讨论的病例；决定出院、转科</td></tr>
+    <tr><td class="center"><b style="color:var(--warn)">一线查房</b></td><td><b style="color:var(--warn)">住院医师及以上</b></td><td>巡视全部所管患者、观察病情变化、执行并追踪医嘱、向上级汇报</td></tr>
+  </table>
+  <div class="tip"><b>资质原则：</b>实行"就高不就低"——上级职称可以代替下级查房（如副主任医师可代二线，记录需注明"代二线查房"），但<b>主治医师不能代替三线、住院医师不能代替二线</b>。</div>
+</div>
+
+<h2>一、查房的频率与记录要求</h2>
+
+<table>
+  <tr><th>级别</th><th class="center">查房频率</th><th class="center">病历记录要求</th></tr>
+  <tr>
+    <td>一线（住院医师及以上，含轮转医生）</td>
+    <td class="center"><span class="freq">≥2次/天</span><br><span class="small">（工作日与非工作日均至少2次）</span></td>
+    <td class="center">每日观察病情、随时记录；<br>病情危重至少每日1次病程记录，<br>病情稳定每2–3天1次</td>
+  </tr>
+  <tr>
+    <td>二线（主治医师及以上）</td>
+    <td class="center"><span class="freq">≥3次/周</span></td>
+    <td class="center">每周≥3次二线查房记录</td>
+  </tr>
+  <tr>
+    <td>三线（科主任、主任/副主任医师）</td>
+    <td class="center"><span class="freq">≥2次/周</span></td>
+    <td class="center">每周≥2次三线查房记录</td>
+  </tr>
+</table>
+
+<div class="warn"><b>对轮转医生的硬性提醒：</b>
+<ul style="margin-bottom:0">
+  <li><b>住院少于1周即出院的患者，出院前必须有1次三线查房</b>——请提前主动汇报，不要遗漏；</li>
+  <li><b>二线、三线查房意见要单独记录，不能替代普通病程记录</b>；上级医师查房也不能替代一线查房记录；</li>
+  <li><b>术者必须亲自在术前和术后24小时内查房</b>——轮转医生如为术者或一助，请遵守；</li>
+  <li>因其他工作不能亲自查房时，必须交班给<b>值班的同年资医师</b>完成，并做好交接记录。</li>
+</ul>
+</div>
+
+<h2>二、一线医生每日该做什么</h2>
+
+<div class="flow">
+  <div class="step">
+    <h4>① 晨间查房（上班后）</h4>
+    <p>巡视所管<b>全部</b>患者</p>
+    <p>重点关注：危重、疑难、待明确诊断、新入院、术后当天患者</p>
+  </div>
+  <div class="arrow">→</div>
+  <div class="step">
+    <h4>② 汇报与准备</h4>
+    <p>向上级医师汇报病情、诊断、治疗情况</p>
+  </div>
+  <div class="arrow">→</div>
+  <div class="step">
+    <h4>③ 参加二/三线查房</h4>
+    <p>报告简要病历、当前病情、提出需解决的问题</p>
+    <p>记录上级医师指示并落实</p>
+  </div>
+  <div class="arrow">→</div>
+  <div class="step">
+    <h4>④ 午后/晚间再查房</h4>
+    <p>当日第2次巡视所管患者</p>
+    <p>追踪化验结果、处理临时问题、交班</p>
+  </div>
+</div>
+
+<h3>一线查房的具体内容（制度原文要点）</h3>
+<div class="card">
+<ol>
+  <li><b>巡视观察</b>：查看所管全部患者的症状、体征变化；重点关注<b class="hl">危重、疑难、待明确诊断、新入院及术后当天</b>的患者；</li>
+  <li><b>主动汇报</b>：向上级医师汇报经治病人的病情、诊断、治疗等情况；</li>
+  <li><b>医嘱执行</b>：检查当日开具医嘱的执行情况、辅助检查完成情况；</li>
+  <li><b>结果追踪</b>：追踪检查化验结果回报，给予及时处理（危急值须立即按流程上报处理）；</li>
+  <li><b>整体关照</b>：检查患者饮食情况及心理状态，主动征求患者对饮食、生活等方面的意见。</li>
+</ol>
+</div>
+
+<h3>参加二/三线查房时一线要求</h3>
+<div class="card">
+<ul class="check">
+  <li>查房前准备好病历、影像资料、检查报告；</li>
+  <li>经治医师报告<b>简要病历、当前病情</b>，并提出<b>需要解决的问题</b>；</li>
+  <li>自上而下逐级认真听取指示，执行后记录于病程；</li>
+</ul>
+</div>
+
+<h2>三、不能踩的红线</h2>
+<div class="warn">
+<ul style="margin-bottom:0">
+  <li>轮转医生<b>无独立行医资格时不得独立值班、独立出具诊疗意见</b>，查房发现的问题须及时请示上级医师；</li>
+  <li>不得让二线、三线查房记录"顶替"你的病程记录——<b>每种记录各司其职</b>；</li>
+  <li>不得因手术、门诊等其他工作缺席当日查房而不交接——<b>必须交班给值班同年资医师</b>；</li>
+  <li>病程记录要及时：危重患者至少每日1次，平稳患者每2–3天1次；</li>
+  <li>夜查房（值班医师陪同住院总/二线巡视）时，主动汇报你主管患者的重点情况。</li>
+</ul>
+</div>
+
+<h2>四、一页速记</h2>
+<div class="card">
+<table>
+  <tr><th style="width:180px">关键词</th><th>要点</th></tr>
+  <tr><td><b>频率</b></td><td>一线 ≥2次/天；二线 ≥3次/周；三线 ≥2次/周（住院&lt;1周出院者须有三线查房）</td></tr>
+  <tr><td><b>记录</b></td><td>每周≥3次二线记录、≥2次三线记录，单独书写，互不替代</td></tr>
+  <tr><td><b>重点患者</b></td><td>危重、疑难、待明确诊断、新入院、术后当天</td></tr>
+  <tr><td><b>术者</b></td><td>术前、术后24小时内必须亲自查房</td></tr>
+  <tr><td><b>你的一天</b></td><td>晨间全病区巡视 → 汇报准备 → 跟二/三线查房 → 午后晚间再巡视 → 追踪结果交班</td></tr>
+</table>
+</div>
+
+<footer>
+  本文档依据《首都医科大学附属北京友谊医院核心制度汇编（2026年6月）》之"三级查房制度"整理，供轮转医师培训学习使用；<br>
+  如与医院最新制度原文不一致，以医院正式文件为准。 · 教育处 / 医务处 培训材料
+</footer>
+
+</div>
+</body>
+</html>
